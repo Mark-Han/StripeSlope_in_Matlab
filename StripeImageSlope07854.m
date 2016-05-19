@@ -2,7 +2,7 @@ clear all
 close all
     arrk=0;
 for (i=68:1:402),
-    [A,map]=imread('C:\Users\Dell\Desktop\A18THETA45.gif','frames',i);
+    [A,map]=imread('A18THETA45.gif','frames',i);
     % figure,imshow(A) 
     % figure,imshow(A,map);  
     imwrite(A,map,'AA.jpg');  
@@ -27,7 +27,7 @@ for (i=68:1:402),
     if i<362
         seq=10500+10*i;
     elseif i>361
-        seq=19970+50*i;
+        seq=19970+50*(i-361);
     end
     fname=strcat(num2str(seq),'.png');
     % imwrite(BW3,fname),hold on
