@@ -1,8 +1,8 @@
 clear all
 close all
     arrk=0;
-for (i=270:300),
-    [A,map]=imread('10996.gif','frames',i);
+for (i=2:15),
+    [A,map]=imread('C:\Users\DELL\Desktop\10996mid.gif','frames',i);
     % figure,imshow(A) 
     % figure,imshow(A,map);  
     imwrite(A,map,'AA.jpg');  
@@ -11,7 +11,7 @@ for (i=270:300),
     A1=rgb2gray(AA);
     % figure,imshow(A1);
     f1=im2double(A1);
-    level = 1.28*graythresh(f1);
+    level = 1.35*graythresh(f1);
     s1=im2bw(f1,level);
     BW3=s1(100:600,200:750);
     % figure,imshow(BW3);
