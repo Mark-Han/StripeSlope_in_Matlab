@@ -1,2 +1,5 @@
+# this is a comment line
+# You can add file or filetypes to be ignored by git
+# Edited by Mark Han
 ~$*.xlsx
 *.gif
