@@ -1,8 +1,8 @@
 clear all
 close all
     arrk=0;
-for (i=1:6),
-    [A,map]=imread('..\GitHub\StripeSlope_in_Matlab\0.3hhead.gif','frames',i);
+for (i=1:31),
+    [A,map]=imread('..\GitHub\StripeSlope_in_Matlab\0.2head.gif','frames',i);
     % figure,imshow(A) 
     % figure,imshow(A,map);  
     imwrite(A,map,'AA.jpg');  
@@ -26,8 +26,8 @@ for (i=1:6),
         plot(xy(:,1),xy(:,2),'LineWidth',4,'Color','green');
     end
 
-    % range(10300,50,22000)
-    seq=10300+50*(i-1);
+    % range(11500,50,13500)
+    seq=11500+50*(i-1);
     fname=strcat(num2str(seq),'.png');
     % imwrite(BW3,fname),hold on
     %http://stackoverflow.com/questions/1848176/how-do-i-save-a-plotted-image-and-maintain-the-original-image-size-in-matlab
